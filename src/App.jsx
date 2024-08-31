@@ -1,19 +1,41 @@
-import { useState } from 'react'
-import Body from './components/Body'
-import Header from './components/Header'
+import Header from "./components/Header";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import ReactDOM from "react-dom/client";
 
-
-
-
-function App() {
-  
-
+const Applayout = () => {
   return (
     <>
-      <Header/>
-      <Body/>
+      <Header />
+      <Outlet />
     </>
-  )
+  );
+};
+
+function App() {
+  const approuter = createBrowserRouter([
+
+    {
+      path: "/",
+      element: <Applayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About/>,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={approuter} />;
 }
 
-export default App
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App/>);
+
+export default App;
