@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .animate-pulse {
     animation: pulse 1s infinite alternate;
 }
@@ -12,3 +11,10 @@
         opacity: 0.6;
     }
 }
+
+
+@layer utilities {
+    ::selection {
+      @apply bg-orange-400 text-white;
+    }
+  }
