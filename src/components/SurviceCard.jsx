@@ -4,7 +4,7 @@ const SurviceCard = (props) => {
 
   return (
     <div>
-      <div class="grid items-center text-center hover:shadow-lg justify-center bg-white h-56 w-72 rounded-lg shadow-md p-8">
+      <div class="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
         <div class="flex justify-center mb-6">
           <img
             width="50"
