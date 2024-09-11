@@ -45,38 +45,38 @@ const Home = () => {
 
           <div class="flex flex-wrap justify-center gap-8 ">
             {/* -- Card 1 -- */}
-            <SurviceCard path="./icons/Topographic.png" title="Topographic" />
+            <SurviceCard path="./src/icons/Topographic.png" title="Topographic" />
 
             {/* -- Card 2 -- */}
             <SurviceCard
-              path="./icons/boundryicon.png"
+              path="./src/icons/boundryicon.png"
               title="Boundry Survey"
             />
 
             {/* -- Card 3 -- */}
             <SurviceCard
-              path="./icons/Alignment.png"
+              path="./src/icons/Alignment.png"
               title="Alignment Planning Survey"
             />
 
             {/* -- Card 4 -- */}
             <SurviceCard
-              path="./icons/setting.png"
+              path="./src/icons/setting.png"
               title="Setting-out Survey"
             />
 
             {/* -- Card 5 -- */}
-            <SurviceCard path="./icons/Drone.png" title="Drone Survey" />
+            <SurviceCard path="./src/icons/Drone.png" title="Drone Survey" />
 
             {/* -- Card 6 -- */}
-            <SurviceCard path="./icons/Leveling.png" title="Leveling Survey" />
+            <SurviceCard path="./src/icons/Leveling.png" title="Leveling Survey" />
 
             {/* -- Card 7 -- */}
-            <SurviceCard path="./icons/Dam.png" title="Dam-River Survey" />
+            <SurviceCard path="./src/icons/Dam.png" title="Dam-River Survey" />
 
             {/* -- Card 8 -- */}
             <SurviceCard
-              path="./icons/Preliminary.png"
+              path="./src/icons/Preliminary.png"
               title="Preliminary Survey"
             />
           </div>
