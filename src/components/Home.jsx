@@ -2,7 +2,14 @@ import React from "react";
 import Animation from "./Animation";
 import SurviceCard from "./SurviceCard";
 import Accordion from "./Accordion";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Topographic from "./icons/Topographic.png";
+import boundryicon from "./icons/boundryicon.png";
+import Alignment from "./icons/Alignment.png";
+import setting from "./icons/setting.png";
+import drone from "./icons/drone.png";
+import leveling from "./icons/Leveling.png";
+import Dam from "./icons/Dam.png";
 
 const Home = () => {
   return (
@@ -34,51 +41,112 @@ const Home = () => {
       {/* ----- Survices ----- */}
 
       <div className="xl:mt-6 bg-gray-50">
-        <main class=" mx-16 py-16 ">
-          <h1 class="text-5xl font-bold text-center mb-8">
+        <main className=" mx-16 py-16 ">
+          <h1 className="text-5xl font-bold text-center mb-8">
             Save Your Time! Save Your Money!
           </h1>
-          <p class="text-lg text-center mb-16">
+          <p className="text-lg text-center mb-16">
             Landmark Surveyors, comprised of seasoned experts with extensive
             experience in the land surveying industry.
           </p>
 
-          <div class="flex flex-wrap justify-center gap-8 ">
+          <div className="flex flex-wrap justify-center gap-8 ">
             {/* -- Card 1 -- */}
-            <SurviceCard path="./src/icons/Topographic.png" title="Topographic" />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={Topographic} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Topographic
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 2 -- */}
-            <SurviceCard
-              path="./src/icons/boundryicon.png"
-              title="Boundry Survey"
-            />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={boundryicon} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Boundry Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 3 -- */}
-            <SurviceCard
-              path="./src/icons/Alignment.png"
-              title="Alignment Planning Survey"
-            />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={Alignment} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Alignment Planning Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 4 -- */}
-            <SurviceCard
-              path="./src/icons/setting.png"
-              title="Setting-out Survey"
-            />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={setting} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Setting-out Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 5 -- */}
-            <SurviceCard path="./src/icons/Drone.png" title="Drone Survey" />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={drone} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Drone Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 6 -- */}
-            <SurviceCard path="./src/icons/Leveling.png" title="Leveling Survey" />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={leveling} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Leveling Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 7 -- */}
-            <SurviceCard path="./src/icons/Dam.png" title="Dam-River Survey" />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={Alignment} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Dam-River Survey
+                </h2>
+              </div>
+            </div>
 
             {/* -- Card 8 -- */}
-            <SurviceCard
-              path="./src/icons/Preliminary.png"
-              title="Preliminary Survey"
-            />
+            <div className="grid items-center text-center justify-center bg-white hover:shadow-lg  hover:scale-105 h-56 w-72 rounded-lg shadow-md p-8">
+              <div className="flex justify-center mb-6">
+                <img width="50" height="50" src={Dam} />
+              </div>
+              <div>
+                <h2 className="text-2xl font-sans tracking-wider">
+                  Preliminary Survey
+                </h2>
+              </div>
+            </div>
+
           </div>
         </main>
       </div>
@@ -135,7 +203,8 @@ const Home = () => {
               Customer Satisfaction
             </div>
             <div className="text-xl">
-              We prioritize your needs and ensure every project meets your expectations
+              We prioritize your needs and ensure every project meets your
+              expectations
             </div>
           </div>
         </div>
@@ -161,20 +230,22 @@ const Home = () => {
       </div>
 
       {/* ----- Footer ----- */}
-      <div className="bg-black text-white py-12 ">
+      <div className="bg-black text-white pt-16 pb-6 ">
         <div className="container mx-auto px-32 lg:px-20 md:px-16 sm:px-7">
           <div className="flex flex-wrap justify-between">
             <div className="md:w-full w-1/4 lg:w-2/4 md:mb-6 mb-0 pr-6">
               <h2 className="text-xl font-semibold mb-4">Company</h2>
               <div className="sm:pl-5 leading-relaxed">
-                Landmark Surveyors, a team of experts dedicated to providing quality and affordable digital land surveying services.
+                Landmark Surveyors, a team of experts dedicated to providing
+                quality and affordable digital land surveying services.
               </div>
             </div>
 
             <div className="md:w-full w-1/4 lg:w-2/4 md:mb-6 mb-0 pr-12">
               <h2 className="text-xl font-semibold mb-4">Address</h2>
               <p className="leading-relaxed sm:pl-5">
-                301, Deep Dhara Apartment, University Road, Rajkot - 360005 (Opposite G K Dholakia School)
+                301, Deep Dhara Apartment, University Road, Rajkot - 360005
+                (Opposite G K Dholakia School)
               </p>
             </div>
 
@@ -240,7 +311,9 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-12 sm:mt-2  border-t border-gray-300 pt-6 text-center">
-            <p>© 2024 Landmark Survey Mapping Company. All Rights Reserved. Designed by Renil Garala.
+            <p>
+              © 2024 Landmark Survey Mapping Company. All Rights Reserved.
+              Designed by Renil Garala.
             </p>
           </div>
         </div>

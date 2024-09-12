@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 AOS.init();
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import navlogo from "./icons/navlogo.png"
+
 
 const Header = () => {
   //const [btnName, setBtnName] = useState("LOG IN");
@@ -25,7 +27,7 @@ const Header = () => {
       >
         <div className="flex justify-center items-center gap-3">
           <div className="max-w-8 lg:w-11 sm:w-9">
-            <img src="./src/icons/surveying.png" />
+            <img src={navlogo} />
           </div>
           <div className="text-lg lg:text-lg sm:text-base">Landmark Surveyors</div>
         </div>
